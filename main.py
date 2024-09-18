@@ -14,7 +14,7 @@ def fetch_broker_dealer_list():
         broker_dealers = []
         
         for item in broker_dealer_list:
-            broker_dealers.append(item.text.strip(),'\n')
+            broker_dealers.append(item.text.strip())
         
         # Save the extracted data to a CSV file
         with open('broker_dealer_list.csv', 'w', newline='') as csvfile:
